@@ -59,7 +59,7 @@ def plot_history(history):
     axs[1].legend(loc="upper right")
     axs[1].set_title("Error eval")
 
-    # plt.show()
+    plt.show()
 
 
 def prepare_datasets(test_size, validation_size):
@@ -181,7 +181,6 @@ if __name__ == "__main__":
     X_to_predict = X_test[80]
     y_to_predict = y_test[80]
 
-    print(X_test.flat[0])
     # predict sample
     predict(model, X_to_predict, y_to_predict)
 
